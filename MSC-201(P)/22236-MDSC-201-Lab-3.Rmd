@@ -1,0 +1,89 @@
+---
+title: "22236-MDSC-201(p)"
+output: pdf_notebook
+---
+
+# Lazy Evaluation
+
+```{r}
+# lazy evaluation
+new<-function(a,b)
+{
+  print(a^2)
+  print(a)
+}
+new(2,3)
+
+```
+
+# Inbuilt Functions
+
+```{r}
+# creating a sequence
+k<-seq(11,40)
+print(k)
+# finding mean of numbers from 21.5 to 74.2
+m<-mean(21.5:74.2)
+print(m)
+# finding sum  of numbers from -9 to 52
+print(sum(-9:52))
+```
+
+# User Defined Functions
+
+```{r}
+fact<-function(a)
+{
+  b<-1
+  for(i in 1:a){
+    b<-b*i
+  }
+  print(b)
+}
+fact(10)
+```
+
+```{r}
+# calling a function without a argument
+fact_n<-function()
+{
+  b<-1
+  for(i in 1:8)
+  {
+    b<-b*i
+  }
+  print(b)
+}
+fact_n()
+```
+
+# R strings
+
+```{r}
+# valid strings
+#+ valid are with single quotes
+#+ with double quotes
+#+ single quote in double quotes
+#+ double quotes in single quotes
+st1<-'single quote'
+str2<-"double quotes"
+str3<-'single"double quotes'
+str4<-"double'single quotes"
+```
+
+# combining multiple strings using the paste method
+
+```{r}
+s1<-"hello"
+s2<-", this is"
+s3<-'a R Notebook'
+print(paste(s1,s2,s3))
+```
+
+```{r}
+print(paste(s1,s2,s3,sep="",collapse=""))
+```
+
+```{r}
+
+```

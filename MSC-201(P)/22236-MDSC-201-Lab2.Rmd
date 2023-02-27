@@ -1,0 +1,125 @@
+---
+name: "22236-MDSC-201-Lab2"
+output: pdf_document
+---
+
+```{r}
+
+# addtion of 2 vectors
+k<-c(23,25,14,0,3,6,8)
+p<-c(66,0,0,1,4,5,8)
+s<-k+p
+print(s)
+
+```
+
+```{r}
+# multiplication of both the vectors
+s<-k*p
+print(s)
+#division
+s<-k/p
+print(s)
+```
+
+```{r}
+#remainder of the first vector with the second
+l<-k%%p
+print(l)
+```
+
+```{r}
+# result of the division of first vector with the other vector
+l<-k%/%p
+print(l)
+```
+
+```{r}
+# colon operator
+a<-1:100
+print(a)
+```
+
+```{r}
+# using the in operator to check if element is there or not
+print(100%in%a)
+```
+
+```{r}
+# matrix multiplication
+m<-matrix(c(1,0,0,1),nrow=2,ncol=2,byrow=TRUE)
+t<-m%*%t(m)
+print(t)
+```
+
+# Control Structures
+
+```{r}
+# if statments
+if(10%in%a)
+{
+  print("we have done the if statments")
+}else
+  {
+  print("try again")
+}
+```
+
+# loops
+
+```{r}
+# while loop
+#+ setting a variable to some value and then iterating it to print until a desired value
+#+ initiating the variable
+i<-2
+while(i)
+{
+  print(i+1)
+  i<-i+1
+  if(i==10)
+  {
+    break
+  }
+}
+```
+
+```{r}
+#R-repeat loop
+a<-11
+repeat{
+  print(a+1)
+  a<-a+1
+  if(a>20)
+  {
+    break
+  }
+}
+```
+
+```{r}
+#for loop
+v<-c(-1:10)
+for(k in v)
+{
+  print(k)
+}
+```
+
+# Loop Control Statements
+
+```{r}
+#break statment has already been used in the while and repeat loop
+```
+
+```{r}
+#next loop control statement
+color<-list("black","blue","yellow","red","orange","hotpink")
+for(i in color)
+{
+  if(i=="k")
+  {
+    next
+  }
+  print(color)
+}
+```
